@@ -26,12 +26,12 @@ public class Roster {
 		treeRoster =  new BST();
 		waitingList = new Queue();
 		Scanner in = new Scanner(fileName);											   //	+----------------------+
-		while(in.hasNext()) {														   //	|	    fileName	   |
-			studentName = in.next();												   //	|				 	   |
-			studentSurname = in.next();												   //	|john	doe		100	   |
-			studentID = Integer.parseInt(in.next()); 							       //	|tom	smith	200	   |
-			if(treeCount < maxSize)	{												   //	|					   |
-				treeRoster.insert(new Student(studentName, studentSurname, studentID));//   +----------------------+
+		while(in.hasNext()) {													   //	|       FileName       |
+			studentName = in.next();											   //	|           	       |
+			studentSurname = in.next();											   //	|john	doe	100    |
+			studentID = Integer.parseInt(in.next()); 							                   //	|tom	smith	200    |
+			if(treeCount < maxSize)	{											   //	|		       |			   |
+				treeRoster.insert(new Student(studentName, studentSurname, studentID));                                    //   +----------------------+
 				treeCount++;
 			}																			  
 			else
